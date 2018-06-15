@@ -1,0 +1,56 @@
+#miniContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+#miniContainer div {
+  width: 100px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  border: 1px solid #CCC;
+}
+
+
+img.picture {
+  display: none;
+  width: 200px;
+  position:absolute;
+  z-index: 0;
+  top: calc( 50% - 65px );
+  /**
+    * On affiche les images à 50% de l'écran
+    * moins la moitié de l'image (100px) pour
+    * que ce soit bien au centre
+    */
+  left: calc( 50% - 100px );
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid #CCC;
+  border-left: 3px solid #CCC;
+  z-index: 1;
+  top: calc(50% - 20px);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  border-color: red;
+}
+
+.left {
+  left: 10px;
+  transform: rotate( -45deg );
+}
+
+.right {
+  right: 10px;
+  transform: rotate( 135deg );
+}
